@@ -1,4 +1,4 @@
-/**89. Dynamic memory allocation - malloc function*/
+/**Dynamic memory allocation-calloc function*/
 #include <stdio.h>
 #include <stdlib.h>
 // malloc, calloc, realloc
@@ -9,7 +9,7 @@ int main()
     int n;
     printf("Enter how many integers: ");
     scanf("%d", &n);
-    p = (int*)malloc(n * sizeof(int));
+    p = (int*)calloc(n * sizeof(int));
     if (p == NULL)
     {
         printf("Unable to allocate meory\n Exiting the program\n");
